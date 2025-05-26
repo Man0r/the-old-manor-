@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>The Old Manor Guest House – Weligama, Sri Lanka</title>
+  <meta name="description" content="The Old Manor is a tranquil guest house in Weligama surrounded by paddy fields. Ideal for relaxation, yoga, and nature getaways.">
+  <meta name="keywords" content="The Old Manor, Weligama guest house, peaceful stay Sri Lanka, yoga retreat, traditional villa, Mirissa, Talpe, peacocks, forest lodge">
+  <meta name="author" content="The Old Manor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="The Old Manor Guest House">
+  <meta property="og:description" content="Where heart finds peace. Discover serenity in Weligama.">
+  <meta property="og:image" content="https://man0r.github.io/the-old-manor-/about-bg.jpg">
+  <meta property="og:url" content="https://man0r.github.io/the-old-manor-/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Old Manor Guest House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    .slideshow {
+      position: relative;
+      max-width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+    .slideshow img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slideshow img.active {
+      opacity: 1;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .floating-buttons a {
+      text-decoration: none;
+    }
+    .booking-button, .whatsapp-button {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .booking-button {
+      background-color: #003580;
+    }
+    .booking-button:hover {
+      background-color: #00296b;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+  <meta name="google-site-verification" content="xQRVLgynynbQP6yzAeuyNa-HfJzX5ik6wdTTA0LdFuE" />
+</head>
+<body>
+  <header>
+    <h1>The Old Manor Guest House</h1>
+  </header>
+
+  <div class="slideshow">
+    <img src="IMG_7821.PNG" alt="The Old Manor logo" class="active" />
+    <img src="IMG_7833.JPG" alt="Guest House Room View" />
+    <img src="IMG_7840.JPG" alt="Garden and trees at The Old Manor" />
+    <img src="IMG_7837.JPG" alt="Traditional wooden hall" />
+    <img src="IMG_7854.JPG" alt="Kitchen and amenities" />
+    <img src="IMG_7906.JPG" alt="Antique furniture and dining area" />
+    <img src="IMG_7925.JPG" alt="Peaceful outdoor surroundings" />
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <div class="floating-buttons">
+    <a href="https://www.booking.com/hotel/lk/the-old-manor.html" target="_blank">
+      <button class="booking-button">Book Now</button>
+    </a>
+    <a href="https://wa.me/94761102747" target="_blank">
+      <button class="whatsapp-button">Chat on WhatsApp</button>
+    </a>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slideshow img');
+    let current = 0;
+
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 4000);
+  </script>
+</body>
+</html>
